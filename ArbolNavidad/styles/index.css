@@ -1,0 +1,79 @@
+.navidad {
+  position: relative;
+}
+.arbol{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+img{
+  height:97vh ;
+  width:auto ;
+}
+.star{
+  background-color: rgb(249, 253, 0);
+  position: absolute;
+  clip-path: polygon(30% 0%, 55% 36%, 100% 30%, 60% 50%, 70% 100%, 40% 57%, 0% 70%, 33% 42%);
+}
+.destello{
+  height: 30px;
+  width: 30px;
+}
+.destello2{
+  height: 100px;
+  width: 100px;
+}
+.offStar{
+  display: none;
+}
+.s1{
+  left: 57%;
+  top: 50%;
+}
+.s2{
+  left: 36%;
+  top: 43%;
+}
+.s3{
+  left: 54%;
+  top: 27%;
+}
+.s4{
+  left: 41%;
+  top: 70%;
+}
+@keyframes destellos {
+  0% { height: 30px;
+    width: 30px;
+    background-color: rgb(249, 253, 0);
+  }
+  50% {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(249, 253, 0);
+  }
+}
+@keyframes destellos2 {
+  0% {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(249, 253, 0);
+  }
+  50% { height: 30px;
+    width: 30px;
+    background-color: rgb(249, 253, 0);
+  }
+  
+}
+.animacion1{
+  animation-name: destellos;
+  animation-duration:1s ;
+  animation-iteration-count: infinite;
+}
+.animacion2{
+  animation-name: destellos2;
+  animation-duration:1s ;
+  animation-iteration-count: infinite;
+}
